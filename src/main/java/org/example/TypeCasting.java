@@ -10,5 +10,9 @@ public class TypeCasting {
         System.out.println(intvalue);
         System.out.println(longvalue);
         System.out.println(douublevalue);
+
+        double doublevalue2 = 100.25;
+        //Explicit type casting from double to int
+        int intvalue2 = (int)doublevalue2;
     }
 }
