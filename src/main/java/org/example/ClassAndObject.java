@@ -24,11 +24,35 @@ class Student{
     }
 
 }
+
+class Marks extends Student{
+    private float objectiveMarks;
+    private float subjectiveMarks;
+
+    Scanner scanner = new Scanner(System.in);
+
+    public void AcceptDetails(){
+        super.AcceptDetails();
+        System.out.println("Enter Objective Marks : ");
+        objectiveMarks = scanner.nextFloat();
+        System.out.println("Enter Subjective Marks : ");
+        subjectiveMarks = scanner.nextFloat();
+
+    }
+
+    public void DisplayDetails(){
+        super.DisplayDetails();
+        System.out.println("Objective Marks is : " + objectiveMarks);
+        System.out.println("Subjective Marks is : " + subjectiveMarks);
+
+    }
+
+        }
 public class ClassAndObject {
     public static void main(String arg[]){
-        Student student = new Student();
-        student.AcceptDetails();
-        student.DisplayDetails();
+        Marks marks = new Marks();
+        marks.AcceptDetails();
+        marks.DisplayDetails();
 
     }
 }
