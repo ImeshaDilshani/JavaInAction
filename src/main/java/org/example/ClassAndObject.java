@@ -25,7 +25,7 @@ class Student{
 
 }
 public class ClassAndObject {
-    public static void main(String[] arg){
+    public static void main(String arg[]){
         Student student = new Student();
         student.AcceptDetails();
         student.DisplayDetails();
