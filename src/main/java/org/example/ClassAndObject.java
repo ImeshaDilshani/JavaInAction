@@ -47,12 +47,29 @@ class Marks extends Student{
 
     }
 
-        }
+}
+class Sport extends Marks{
+    private float score;
+    public void AcceptDetails(){
+        super.AcceptDetails();
+        System.out.println("Enter Sport Score : ");
+        score = scanner.nextFloat();
+
+
+    }
+
+    public void DisplayDetails(){
+        super.DisplayDetails();
+        System.out.println("Sport Score : " + score);
+
+
+    }
+}
 public class ClassAndObject {
     public static void main(String arg[]){
-        Marks marks = new Marks();
-        marks.AcceptDetails();
-        marks.DisplayDetails();
+        Sport obj = new Sport();
+        obj.AcceptDetails();
+        obj.DisplayDetails();
 
     }
 }
