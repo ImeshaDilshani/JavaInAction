@@ -1,6 +1,11 @@
 package org.example;
 
+import java.io.InputStream;
+
 public class Scanner {
+    public Scanner(InputStream in) {
+    }
+
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.println("Enter Your Name: ");
