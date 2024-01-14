@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Q3 {
     public static void main(String[] arg){
         Scanner scanner = new Scanner(System.in);
-// Print a prompt to the user.
+        // Print a prompt to the user.
         System.out.print("Enter the length in centimetres: ");
-// Read the length in centimetres from the user.
+        // Read the length in centimetres from the user.
         int centimetres = scanner.nextInt();
 // Convert the centimetres to inches.
         double inches = centimetres / 2.54;
